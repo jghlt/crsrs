@@ -12,8 +12,8 @@
   "project": {
     "name": "bp-react-webpack",
     "url": "https://github.com/jghlt/bp-react-webpack",
-    "title": "bp-react-webpack",
-    "description": "Simple structured staring point for react projects, with webpack.",
+    "title": "crsr",
+    "description": "All cursors, all the time",
     "google": {
       "analytics": false,
       "verification": false
@@ -29,8 +29,8 @@
       "proxy": "http://localhost:8080/"
     },
     "api": {
-      "development": "https://github.com/jghlt/bp-react-webpack",
-      "production": "https://github.com/jghlt/bp-react-webpack"
+      "development": "https://github.com/jghlt/crsr",
+      "production": "https://github.com/jghlt/crsr"
     }
   },
   "keywords": [],
