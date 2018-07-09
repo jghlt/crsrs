@@ -10,9 +10,9 @@
     "build": "webpack --progress --config ./webpack/webpack.production.js --mode production"
   },
   "project": {
-    "name": "crsrs",
+    "name": "CRSRS",
     "url": "https://crsrs.me",
-    "title": "crsrs - CSS3 Cursors List - Click to copy",
+    "title": "CRSRS - CSS3 Cursors List - Click to copy",
     "description": "All cursors, all the time",
     "google": {
       "analytics": false,
