@@ -26,7 +26,7 @@ class CusrorsListItem extends React.Component {
             <div className="dt w-100 h-100">
               <div className="dtc v-mid">
                 <div className="absolute left-0 right-0 bottom-0">
-                  <div className="pa3 f6">
+                  <div className="pa3 f6 _u-transform-hack">
                     {name}
                   </div>
                 </div>
