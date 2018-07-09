@@ -1,1 +1,71 @@
 @import '~tachyons/css/tachyons.css';
+@import '../../assets/fonts/7bo7rKNcVt7ZcPq/SpaceMono-Regular.css';
+
+// vars
+$color-black: #101010;
+$color-white: #ffffff;
+$color-smoke: #F6F6F6;
+$ff-mono: 'Space Mono', monospace;
+
+
+// reset
+*{
+  outline: none;
+}
+
+::selection{
+  background: rgba(0, 0, 0, 0.05);
+}
+
+::-webkit-input-placeholder {
+  color: $color-black;
+}
+::-moz-placeholder {
+  color: $color-black;
+}
+:-ms-input-placeholder {
+  color: $color-black;
+}
+:-moz-placeholder {
+  color: $color-black;
+}
+
+html,
+body{
+  font-size:16px;
+}
+
+html{
+  min-height: 100%;
+}
+
+html{
+  color: $color-black;
+  font-family: $ff-mono;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+// helpers
+._ff-mono{
+  font-family: $ff-mono;
+  font-weight: 400;
+}
+
+
+// objects
+._o-box{
+  border-color: $color-smoke;
+  display: inline-block;
+  margin-bottom: -1px;
+  margin-left: -1px;
+}
+
+// utils
+._u-bgc-white{
+  background-color:white;
+}
+
+._u-lh-0{
+  line-height: 0;
+}
