@@ -1,5 +1,5 @@
 {
-  "name": "crsr",
+  "name": "crsrs",
   "version": "1.0.0",
   "description": "",
   "private": true,
@@ -10,9 +10,9 @@
     "build": "webpack --progress --config ./webpack/webpack.production.js --mode production"
   },
   "project": {
-    "name": "bp-react-webpack",
-    "url": "https://github.com/jghlt/bp-react-webpack",
-    "title": "crsr",
+    "name": "crsrs",
+    "url": "https://crsrs.me",
+    "title": "crsrs - CSS3 Cursors List - Click to copy",
     "description": "All cursors, all the time",
     "google": {
       "analytics": false,
