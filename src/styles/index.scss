@@ -5,6 +5,7 @@
 $color-black: #101010;
 $color-white: #ffffff;
 $color-smoke: #ECECEC;
+$color-green: #00AB57;
 $ff-mono: 'Space Mono', monospace;
 
 
@@ -64,11 +65,19 @@ html{
   transform: scale(1);
   backface-visibility: hidden;
 
-  &:hover{
+  &.is-hovered{
     transition: all 150ms cubic-bezier(0.19, 1, 0.22, 1);
-    box-shadow: 0px 0px 2.25em 0px rgba(15, 15, 15, 0.25);
+    box-shadow: 0px 0px 2.25em 0px rgba(15, 15, 15, 0.175);
     border-color:white;
-    transform: scale(1.095);
+    transform: scale(1.075);
+    z-index: 1;
+  }
+
+  &.is-clicked{
+    transition: all 100ms cubic-bezier(0.19, 1, 0.22, 1);
+    box-shadow: 0px 0px 2em 0px rgba(15, 15, 15, 0.175);
+    border-color:white;
+    transform: scale(1.025);
     z-index: 1;
   }
 }
@@ -76,6 +85,10 @@ html{
 // utils
 ._u-bgc-white{
   background-color:white;
+}
+
+._u-c-green{
+  color: $color-green;
 }
 
 ._u-lh-0{
