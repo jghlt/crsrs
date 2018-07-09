@@ -20,7 +20,7 @@
     },
     "colors": {
       "theme": "#101010",
-      "background": "#ffffff"
+      "background": "#f6f6f6"
     },
     "paths": {
       "src": "/src/",

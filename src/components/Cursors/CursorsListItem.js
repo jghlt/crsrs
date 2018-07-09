@@ -47,7 +47,7 @@ class CusrorsListItem extends React.Component {
       this.setCopied(true);
       setTimeout(() => {
         this.setCopied(false);
-      }, 650);
+      }, 1200);
     }
   }
 
