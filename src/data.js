@@ -27,7 +27,7 @@ const data = {
     },
     {
       name: 'pointer',
-      component: 'Default',
+      component: 'Pointer',
       declaration: 'cursor: pointer;'
     },
     {
