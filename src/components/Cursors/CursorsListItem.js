@@ -111,7 +111,9 @@ class CusrorsListItem extends React.Component {
                     <div className="aspect-ratio--object cover">
                       <div className="dt w-100 h-100">
                         <div className="dtc v-mid">
-                          {Component && <Component name={name} />}
+                          <div className="_o-box-icon dib">
+                            { Component && <Component /> }
+                          </div>
                         </div>
                       </div>
                     </div>

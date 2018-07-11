@@ -1,17 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function CusrorsIconNone(props) {
-  const { name } = props;
+function CusrorsIconNone() {
   return (
-    <div>
-      {name}
+    <div className="aspect-ratio aspect-ratio--1x1">
+      <div className="aspect-ratio--object" />
     </div>
   );
 }
-
-CusrorsIconNone.propTypes = {
-  name: PropTypes.string.isRequired
-};
 
 export default CusrorsIconNone;
