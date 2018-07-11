@@ -8,16 +8,6 @@ const data = {
   },
   cursors: [
     {
-      name: 'none',
-      component: 'None',
-      declaration: 'cursor: none;'
-    },
-    {
-      name: 'auto',
-      component: 'Auto',
-      declaration: 'cursor: auto;'
-    },
-    {
       name: 'default',
       component: 'Default',
       declaration: 'cursor: default;'
@@ -183,7 +173,17 @@ const data = {
       name: 'grabbing',
       component: 'Grabbing',
       declaration: 'cursor: grabbing;'
-    }
+    },
+    {
+      name: 'none',
+      component: 'None',
+      declaration: 'cursor: none;'
+    },
+    {
+      name: 'auto',
+      component: 'Auto',
+      declaration: 'cursor: auto;'
+    },
   ]
 };
 

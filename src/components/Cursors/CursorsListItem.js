@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import copy from 'copy-to-clipboard';
 import vendorPrefix from 'css-vendor-prefix';
 
 // Icons are imported dynamnically see:
 // * https://medium.com/@magbicaleman/intro-to-dynamic-import-in-create-react-app-6305bb397c46
-const prefix = 'CursorsIcon';
 
 class CusrorsListItem extends React.Component {
   constructor(props) {
@@ -20,8 +20,8 @@ class CusrorsListItem extends React.Component {
 
   componentDidMount() {
     const { component } = this.props;
-    const path = `${prefix}${component}`;
-    import(`./${path}`)
+    const path = `./CursorsIcon${component}`;
+    import(`${path}`)
       .then(icon => this.setState({
         icon: icon.default
       }));
@@ -60,6 +60,7 @@ class CusrorsListItem extends React.Component {
     }
     if (!this.state.copied) {
       this.setCopied(true);
+      this.copyToClipboard();
       setTimeout(() => {
         this.setCopied(false);
       }, 1200);
@@ -76,6 +77,13 @@ class CusrorsListItem extends React.Component {
     if (!this.state.isTouch) {
       this.setHovered(false);
     }
+  }
+
+  copyToClipboard = () => {
+    copy(this.props.declaration, {
+      debug: true,
+      message: 'Press #{key} to copy',
+    });
   }
 
   render() {
