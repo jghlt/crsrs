@@ -80,6 +80,7 @@
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
+    "css-vendor-prefix": "^1.0.1",
     "prop-types": "^15.6.2",
     "pubsub-js": "^1.5.3",
     "raf": "^3.4.0",

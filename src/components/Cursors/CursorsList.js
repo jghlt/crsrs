@@ -8,10 +8,6 @@ class CusrorsList extends React.Component {
     this.state = {};
   }
 
-  componentDidMount() {
-    console.log('CusrorsList: componentDidMount');
-  }
-
   render() {
     const { cursors } = this.props;
     return (

@@ -32,143 +32,150 @@ const data = {
     },
     {
       name: 'progress',
-      component: 'Default',
+      component: 'Progress',
       declaration: 'cursor: progress;'
     },
     {
-      name: 'wait',
-      component: 'Default',
-      declaration: 'cursor: wait;'
-    },
-    {
       name: 'cell',
-      component: 'Default',
+      component: 'Cell',
       declaration: 'cursor: cell;'
     },
     {
       name: 'crosshair',
-      component: 'Default',
+      component: 'Crosshair',
       declaration: 'cursor: crosshair;'
     },
     {
       name: 'text',
-      component: 'Default',
+      component: 'Text',
       declaration: 'cursor: text;'
     },
     {
       name: 'vertical-text',
-      component: 'Default',
+      component: 'VerticalText',
       declaration: 'cursor: vertical-text;'
     },
     {
       name: 'alias',
-      component: 'Default',
+      component: 'Alias',
       declaration: 'cursor: alias;'
     },
     {
       name: 'copy',
-      component: 'Default',
+      component: 'Copy',
       declaration: 'cursor: copy;'
     },
     {
       name: 'move',
-      component: 'Default',
+      component: 'Move',
       declaration: 'cursor: move;'
     },
     {
       name: 'no-drop',
-      component: 'Default',
+      component: 'NoDrop',
       declaration: 'cursor: no-drop;'
     },
     {
       name: 'not-allowed',
-      component: 'Default',
+      component: 'NotAllowed',
       declaration: 'cursor: not-allowed;'
     },
     {
       name: 'e-resize',
-      component: 'Default',
+      component: 'EResize',
       declaration: 'cursor: e-resize;'
     },
     {
       name: 'n-resize',
-      component: 'Default',
+      component: 'NResize',
       declaration: 'cursor: n-resize;'
     },
     {
       name: 'ne-resize',
-      component: 'Default',
+      component: 'NeResize',
       declaration: 'cursor: ne-resize;'
     },
     {
       name: 'nw-resize',
-      component: 'Default',
+      component: 'NwResize',
       declaration: 'cursor: nw-resize;'
     },
     {
       name: 's-resize',
-      component: 'Default',
+      component: 'SResize',
       declaration: 'cursor: s-resize;'
     },
     {
       name: 'se-resize',
-      component: 'Default',
+      component: 'SeResize',
       declaration: 'cursor: se-resize;'
     },
     {
       name: 'sw-resize',
-      component: 'Default',
+      component: 'SwResize',
       declaration: 'cursor: sw-resize;'
     },
     {
       name: 'w-resize',
-      component: 'Default',
+      component: 'WResize',
       declaration: 'cursor: w-resize;'
     },
     {
       name: 'ew-resize',
-      component: 'Default',
+      component: 'EwResize',
       declaration: 'cursor: ew-resize;'
     },
     {
       name: 'ns-resize',
-      component: 'Default',
+      component: 'NsResize',
       declaration: 'cursor: ns-resize;'
     },
     {
       name: 'nesw-resize',
-      component: 'Default',
+      component: 'NeswResize',
       declaration: 'cursor: nesw-resize;'
     },
     {
       name: 'nwse-resize',
-      component: 'Default',
+      component: 'NwseResize',
       declaration: 'cursor: nwse-resize;'
     },
     {
       name: 'col-resize',
-      component: 'Default',
+      component: 'ColResize',
       declaration: 'cursor: col-resize;'
     },
     {
       name: 'row-resize',
-      component: 'Default',
+      component: 'RowResize',
       declaration: 'cursor: row-resize;'
     },
     {
       name: 'all-scroll',
-      component: 'Default',
+      component: 'AllScroll',
       declaration: 'cursor: all-scroll;'
     },
     {
       name: 'zoom-in',
-      component: 'Default',
+      component: 'ZoomIn',
       declaration: 'cursor: zoom-in;'
     },
     {
       name: 'zoom-out',
-      component: 'Default',
+      component: 'ZoomOut',
       declaration: 'cursor: zoom-in;'
+    },
+    {
+      prefix: true,
+      name: 'grab',
+      component: 'Grab',
+      declaration: 'cursor: grab;'
+    },
+    {
+      prefix: true,
+      name: 'grabbing',
+      component: 'Grabbing',
+      declaration: 'cursor: grabbing;'
     }
   ]
 };

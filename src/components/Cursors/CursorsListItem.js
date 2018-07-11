@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import vendorPrefix from 'css-vendor-prefix';
 
 // Icons are imported dynamnically see:
 // * https://medium.com/@magbicaleman/intro-to-dynamic-import-in-create-react-app-6305bb397c46
@@ -51,7 +52,6 @@ class CusrorsListItem extends React.Component {
   }
 
   handleClick = () => {
-    console.log('handleClick');
     if (!this.state.clicked) {
       this.setClicked(true);
       setTimeout(() => {
@@ -67,14 +67,12 @@ class CusrorsListItem extends React.Component {
   }
 
   handleMouseEnter = () => {
-    console.log('handleMouseEnter');
     if (!this.state.isTouch) {
       this.setHovered(true);
     }
   }
 
   handleMouseLeave = () => {
-    console.log('handleMouseLeave');
     if (!this.state.isTouch) {
       this.setHovered(false);
     }
@@ -87,9 +85,14 @@ class CusrorsListItem extends React.Component {
       copied,
       icon: Component
     } = this.state;
-    const { name } = this.props;
+    const {
+      name,
+      prefix,
+      declaration
+    } = this.props;
+    const value = (prefix) ? `-${vendorPrefix}-${name}` : name;
     const styles = {
-      cursor: name
+      cursor: value
     };
     return (
       <li

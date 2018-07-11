@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
+  <defs>
+    <path id="progress-a" d="M8.22857143,22.8571429 C8.22857143,27.4020571 11.9131429,31.0857143 16.4571429,31.0857143 L16.4571429,31.0857143 C21.0011429,31.0857143 24.6857143,27.4020571 24.6857143,22.8571429 L24.6857143,22.8571429 C24.6857143,18.3122286 21.0011429,14.6285714 16.4571429,14.6285714 L16.4571429,14.6285714 C11.9131429,14.6285714 8.22857143,18.3122286 8.22857143,22.8571429 L8.22857143,22.8571429 Z"/>
+    <linearGradient id="progress-d" x1="50%" x2="50%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#4AB4EF"/>
+      <stop offset="100%" stop-color="#3582E5"/>
+    </linearGradient>
+    <path id="progress-c" d="M0 0L8.229 0 8.229 8.229 0 8.229z"/>
+    <linearGradient id="progress-e" x1="50%" x2="50%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#3481E4"/>
+      <stop offset="100%" stop-color="#2051DB"/>
+    </linearGradient>
+    <linearGradient id="progress-f" x1="50%" x2="50%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#6BDCFC"/>
+      <stop offset="100%" stop-color="#4DC6FA"/>
+    </linearGradient>
+    <linearGradient id="progress-g" x1="50%" x2="50%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#4BC5F9"/>
+      <stop offset="100%" stop-color="#2FB0F8"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#FFF" d="M0 0H32V32H0z" opacity=".01"/>
+    <path fill="#FFF" d="M7.314 16.843L7.314 2.201 17.912 12.824 11.474 12.824 11.336 12.937z"/>
+    <path fill="#000" d="M8.229 4.401L8.229 14.63 10.943 12.01 11.089 11.883 15.694 11.883z"/>
+    <mask id="progress-b" fill="#fff">
+      <use xlink:href="#progress-a"/>
+    </mask>
+    <g mask="url(#progress-b)">
+      <g transform="translate(8.229 14.629)">
+        <use fill="url(#progress-d)" xlink:href="#progress-c"/>
+        <path fill="url(#progress-e)" d="M8.229 8.229L16.457 8.229 16.457 16.457 8.229 16.457z"/>
+        <path fill="url(#progress-f)" d="M8.229 0L16.457 0 16.457 8.229 8.229 8.229z"/>
+        <path fill="url(#progress-g)" d="M0 8.229L8.229 8.229 8.229 16.457 0 16.457z"/>
+      </g>
+    </g>
+  </g>
+</svg>
