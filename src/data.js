@@ -1,4 +1,11 @@
 const data = {
+  masthead: {
+    title: 'CRSRS - CSS3 Cursors List - All cursors, all the time - Click to copy',
+    lines: [
+      'All cursors, all the time',
+      'Click to copy'
+    ]
+  },
   cursors: [
     {
       name: 'none',

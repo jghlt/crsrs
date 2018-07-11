@@ -7,10 +7,6 @@ class Masthead extends React.Component {
     this.state = {};
   }
 
-  componentDidMount() {
-    console.log('Masthead: componentDidMount');
-  }
-
   render() {
     return (
       <header className="mw7 center tc">

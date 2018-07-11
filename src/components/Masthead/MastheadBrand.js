@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const dimensions = {
-  width: 336,
+  width: 420,
   height: 64
 };
 
