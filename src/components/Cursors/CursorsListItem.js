@@ -1,14 +1,29 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+// Icons are imported dynamnically see:
+// * https://medium.com/@magbicaleman/intro-to-dynamic-import-in-create-react-app-6305bb397c46
+const prefix = 'CursorsIcon';
+
 class CusrorsListItem extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       copied: false,
       clicked: false,
-      hovered: false
+      hovered: false,
+      icon: null,
+      isTouch: ('ontouchstart' in window)
     };
+  }
+
+  componentDidMount() {
+    const { component } = this.props;
+    const path = `${prefix}${component}`;
+    import(`./${path}`)
+      .then(icon => this.setState({
+        icon: icon.default
+      }));
   }
 
   setCopied = (value) => {
@@ -53,19 +68,24 @@ class CusrorsListItem extends React.Component {
 
   handleMouseEnter = () => {
     console.log('handleMouseEnter');
-    this.setHovered(true);
+    if (!this.state.isTouch) {
+      this.setHovered(true);
+    }
   }
 
   handleMouseLeave = () => {
     console.log('handleMouseLeave');
-    this.setHovered(false);
+    if (!this.state.isTouch) {
+      this.setHovered(false);
+    }
   }
 
   render() {
     const {
       clicked,
       hovered,
-      copied
+      copied,
+      icon: Component
     } = this.state;
     const { name } = this.props;
     const styles = {
@@ -88,7 +108,13 @@ class CusrorsListItem extends React.Component {
               <div className="dtc v-mid">
                 <div className="_o-cursor">
                   <div className="aspect-ratio aspect-ratio--1x1">
-                    <div className="aspect-ratio--object cover"></div>
+                    <div className="aspect-ratio--object cover">
+                      <div className="dt w-100 h-100">
+                        <div className="dtc v-mid">
+                          {Component && <Component name={name} />}
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div className="absolute left-0 right-0 bottom-0">
@@ -100,7 +126,7 @@ class CusrorsListItem extends React.Component {
                       </span>
                       :
                       name
-                  }
+                    }
                   </div>
                 </div>
               </div>
@@ -114,6 +140,7 @@ class CusrorsListItem extends React.Component {
 
 CusrorsListItem.propTypes = {
   name: PropTypes.string.isRequired,
+  component: PropTypes.string.isRequired,
   declaration: PropTypes.string.isRequired
 };
 
