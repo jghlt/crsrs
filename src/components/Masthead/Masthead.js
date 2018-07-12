@@ -12,7 +12,6 @@ class Masthead extends React.Component {
   }
 
   componentDidMount() {
-    console.log('componentDidMout');
     this.updateLine();
   }
 
@@ -36,7 +35,7 @@ class Masthead extends React.Component {
     }
     setTimeout(() => {
       this.updateLine();
-    }, 2500);
+    }, 2750);
   }
 
   render() {

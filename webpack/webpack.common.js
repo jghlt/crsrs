@@ -2,6 +2,7 @@ const path = require('path');
 const config = require('../package');
 const webpack = require('webpack');
 const autoprefixer = require('autoprefixer');
+const OfflinePlugin = require('offline-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -53,7 +54,8 @@ module.exports = {
     new HtmlWebpackHarddiskPlugin(),
     new MiniCssExtractPlugin({
       filename: (isDevelopment) ? '[name].css' : '[name].[chunkhash:8].css'
-    })
+    }),
+    new OfflinePlugin()
   ],
   module: {
     rules: [

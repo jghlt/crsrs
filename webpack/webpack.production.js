@@ -3,6 +3,7 @@ const glob = require('glob');
 const config = require('../package');
 const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
+const OfflinePlugin = require('offline-plugin');
 const PurifyCSSPlugin = require('purifycss-webpack');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const WebappWebpackPlugin = require('webapp-webpack-plugin');
