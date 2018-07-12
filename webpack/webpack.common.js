@@ -55,7 +55,9 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: (isDevelopment) ? '[name].css' : '[name].[chunkhash:8].css'
     }),
-    new OfflinePlugin()
+    new OfflinePlugin({
+      publicPath: `${config.project.url}`
+    })
   ],
   module: {
     rules: [
