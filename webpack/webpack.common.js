@@ -56,7 +56,9 @@ module.exports = {
       filename: (isDevelopment) ? '[name].css' : '[name].[chunkhash:8].css'
     }),
     new OfflinePlugin({
-      publicPath: `${config.project.url}`
+      ServiceWorker: {
+        output: '../sw.js'
+      }
     })
   ],
   module: {
