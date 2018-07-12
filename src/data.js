@@ -166,23 +166,23 @@ const data = {
       prefix: true,
       name: 'grab',
       component: 'Grab',
-      declaration: 'cursor: grab;'
+      declaration: '/* vendor prefixes required */ \ncursor: -moz-grab; \ncursor: -webkit-grab; \ncursor: grab;'
     },
     {
       prefix: true,
       name: 'grabbing',
       component: 'Grabbing',
-      declaration: 'cursor: grabbing;'
+      declaration: '/* vendor prefixes required */ \ncursor: -moz-grabbing; \ncursor: -webkit-grabbing; \ncursor: grabbing;'
+    },
+    {
+      name: 'auto',
+      component: 'Default',
+      declaration: 'cursor: auto;'
     },
     {
       name: 'none',
       component: 'None',
       declaration: 'cursor: none;'
-    },
-    {
-      name: 'auto',
-      component: 'Auto',
-      declaration: 'cursor: auto;'
     },
   ]
 };
