@@ -13,13 +13,13 @@
     <meta property="og:site_name" content="<%= htmlWebpackPlugin.options.project.name %>"/>
     <meta property="og:url" content="<%= htmlWebpackPlugin.options.project.url %>"/>
     <meta property="og:title" content="<%= htmlWebpackPlugin.options.project.title %>"/>
-    <meta property="og:image" content="<%= htmlWebpackPlugin.options.project.url %><%=require('../icons/og.png')%>"/>
+    <meta property="og:image" content="<%= htmlWebpackPlugin.options.project.url %><%= require('../icons/og.png') %>"/>
     <meta property="og:description" content="<%= htmlWebpackPlugin.options.project.description %>"/>
 
     <meta name="twitter:site" content="<%= htmlWebpackPlugin.options.project.name %>">
     <meta name="twitter:title" content="<%= htmlWebpackPlugin.options.project.title %>">
     <meta name="twitter:description" content="<%= htmlWebpackPlugin.options.project.description %>">
-    <meta name="twitter:image" content="<%= htmlWebpackPlugin.options.project.url %><%=require('../icons/og.png')%>">
+    <meta name="twitter:image" content="<%= htmlWebpackPlugin.options.project.url %><%= require('../icons/og.png') %>">
     <meta name="twitter:card" content="summary_large_image"/>
 
     <% for (var file in htmlWebpackPlugin.files.css) { %>

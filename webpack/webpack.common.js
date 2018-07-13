@@ -95,12 +95,12 @@ module.exports = {
         ]
       },
       {
-        test: /\.(png|svg|jpg|gif)$/,
+        test: /\.(png)$/,
         use: [
           {
             loader: 'file-loader',
             options: {
-              publicPath: './'
+              publicPath: '/dist'
             }
           }
         ]
