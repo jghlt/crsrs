@@ -5,6 +5,7 @@ const data = {
     title: 'CRSRS - CSS3 Cursors List - All cursors, all the time - Click to copy',
     description: 'CRSRS - CSS3 Cursors List - All cursors, all the time - Click to copy'
   },
+  title: 'CRSRS - CSS3 Cursors List - All cursors, all the time - Click to copy',
   lines: [
     'All cursors, all the time',
     'Click to copy!'

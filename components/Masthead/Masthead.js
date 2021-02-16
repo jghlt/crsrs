@@ -40,7 +40,7 @@ class Masthead extends React.Component {
 
   render() {
     const {
-      meta
+      title
     } = this.props;
     const {
       line
@@ -51,7 +51,7 @@ class Masthead extends React.Component {
           <h1 className="pa0 ma0 dib w-40 _u-lh-0">
             <MastheadBrand />
             <span className="clip">
-              {meta.title}
+              {title}
             </span>
           </h1>
         </div>

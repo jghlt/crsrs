@@ -19,14 +19,19 @@ function HomePage() {
         <meta property="og:site_name" content={ data.meta.name } />
         <meta property="og:url" content={ data.meta.url } />
         <meta property="og:title" content={ data.meta.title } />
-        <meta property="og:image" content="" />
+        <meta property="og:image" content="/icons/og.png" />
         <meta property="og:description" content={ data.meta.description } />
 
         <meta name="twitter:site" content={ data.meta.name } />
         <meta name="twitter:title" content={ data.meta.title } />
         <meta name="twitter:description" content={ data.meta.description } />
-        <meta name="twitter:image" content="" />
+        <meta name="twitter:image" content="/icons/og.png" />
         <meta name="twitter:card" content="summary_large_image" />
+
+        <link rel="shortcut icon" type="image/x-icon" href="/icons/icon-120x120.png" sizes="120x120" />
+        <link rel="shortcut icon" type="image/x-icon" href="/icons/icon-152x152.png" sizes="152x152" />
+        <link rel="shortcut icon" type="image/x-icon" href="/icons/icon-167x167.png" sizes="167x167" />
+        <link rel="shortcut icon" type="image/x-icon" href="/icons/icon-180x180.png" sizes="180x180" />
 
       </Head>
       <App 
