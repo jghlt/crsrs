@@ -170,13 +170,13 @@ const data = {
       prefix: true,
       name: 'grab',
       component: 'Grab',
-      declaration: '/* vendor prefixes required */ \ncursor: -moz-grab; \ncursor: -webkit-grab; \ncursor: grab;'
+      declaration: 'cursor: grab;'
     },
     {
       prefix: true,
       name: 'grabbing',
       component: 'Grabbing',
-      declaration: '/* vendor prefixes required */ \ncursor: -moz-grabbing; \ncursor: -webkit-grabbing; \ncursor: grabbing;'
+      declaration: 'cursor: grabbing;'
     },
     {
       name: 'auto',
