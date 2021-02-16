@@ -14,7 +14,7 @@ class CusrorsListItem extends React.Component {
       clicked: false,
       hovered: false,
       icon: null,
-      isTouch: ('ontouchstart' in window)
+      isTouch: (process.client && 'ontouchstart' in window)
     };
   }
 
@@ -31,6 +31,14 @@ class CusrorsListItem extends React.Component {
     this.setState(() => {
       return {
         copied: value
+      };
+    });
+  }
+
+  setTouch = (value) => {
+    this.setState(() => {
+      return {
+        isTouch: (process.client && 'ontouchstart' in window)
       };
     });
   }
