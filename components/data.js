@@ -167,13 +167,11 @@ const data = {
       declaration: 'cursor: zoom-in;'
     },
     {
-      prefix: true,
       name: 'grab',
       component: 'Grab',
       declaration: 'cursor: grab;'
     },
     {
-      prefix: true,
       name: 'grabbing',
       component: 'Grabbing',
       declaration: 'cursor: grabbing;'
